@@ -24,7 +24,7 @@
 	url = https://github.com/free5gc/udm.git
 [submodule "udr"]
 	path = NFs/udr
-	url = https://github.com/free5gc/udr.git
+	url = https://github.com/ianchen0119/HA-UDR.git
 [submodule "upf"]
 	path = NFs/upf
 	url = https://github.com/free5gc/upf.git
