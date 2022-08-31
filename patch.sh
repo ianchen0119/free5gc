@@ -3,5 +3,5 @@
 NF_LIST="nrf amf smf udr pcf udm nssf ausf upf n3iwf"
 
 for NF in ${NF_LIST}; do
-    echo "${$NF^^ + "_PATCH"}"
+    echo "${$NF^^'_PATCH'}"
 done
