@@ -1,97 +1,45 @@
 name: Go
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
     inputs:
-      amf_base:
-        description: 'NF Base'
-        required: false
-        type: string
       amf_patch:
         description: 'NF patch'
-        required: false
-        type: string
-      ausf_base:
-        description: 'NF Base'
         required: false
         type: string
       ausf_patch:
         description: 'NF patch'
         required: false
         type: string
-      n3iwf_base:
-        description: 'NF Base'
-        required: false
-        type: string
       n3iwf_patch:
         description: 'NF patch'
-        required: false
-        type: string
-      nrf_base:
-        description: 'NF Base'
         required: false
         type: string
       nrf_patch:
         description: 'NF patch'
         required: false
         type: string
-      nssf_base:
-        description: 'NF Base'
-        required: false
-        type: string
       nssf_patch:
         description: 'NF patch'
-        required: false
-        type: string
-      pcf_base:
-        description: 'NF Base'
         required: false
         type: string
       pcf_patch:
         description: 'NF patch'
         required: false
         type: string
-      smf_base:
-        description: 'NF Base'
-        required: false
-        type: string
       smf_patch:
         description: 'NF patch'
-        required: false
-        type: string
-      udm_base:
-        description: 'NF Base'
         required: false
         type: string
       udm_patch:
         description: 'NF patch'
         required: false
         type: string
-      udr_base:
-        description: 'NF Base'
-        required: false
-        type: string
       udr_patch:
         description: 'NF patch'
         required: false
         type: string
-      upf_base:
-        description: 'NF Base'
-        required: false
-        type: string
       upf_patch:
-        description: 'NF patch'
-        required: false
-        type: string
-      webconsole_base:
-        description: 'NF Base'
-        required: false
-        type: string
-      webconsole_patch:
         description: 'NF patch'
         required: false
         type: string
@@ -109,8 +57,6 @@ jobs:
 
     - name: Test with input
       run: |
-        echo "BASE: $WEBCONSOLE_BASE"
-        echo "PATCH: $WEBCONSOLE_PATCH"
+        echo "PATCH: $UPF_PATCH"
       env:
-        WEBCONSOLE_BASE: ${{ inputs.webconsole_base }}
-        WEBCONSOLE_PATCH: ${{ inputs.webconsole_patch }}
+        UPF_PATCH: ${{ inputs.upf_patch }}
