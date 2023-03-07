@@ -49,7 +49,7 @@ require (
 	github.com/tomarrell/wrapcheck v0.0.0-20201130113247-1683564d9756 // indirect
 	github.com/urfave/cli v1.22.5
 	github.com/vishvananda/netlink v1.1.0
-	go.mongodb.org/mongo-driver v1.4.4
+	go.mongodb.org/mongo-driver v1.5.1
 	golang.org/x/net v0.0.0-20211008194852-3b03d305991f
 	golang.org/x/sys v0.0.0-20211007075335-d3039528d8ac
 	golang.org/x/tools v0.0.0-20210111221946-d33bae441459 // indirect
